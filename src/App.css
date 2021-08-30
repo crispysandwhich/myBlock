@@ -1,0 +1,26 @@
+ :root{
+  --color1: #F7F9F7;
+  --color2: #B8AEA6;
+  --color3: #EB7919;
+  --color4: #848483;
+  --color5: #4D4D4C;
+  --color6: #102D51;
+ }
+
+.App{
+  border: 2px solid black;
+  padding: 10px;
+
+
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--color1),var(--color2),var(--color3),var(--color4),var(--color5), var(--color6));
+  background-size: 600% 100% ;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0%{background-position: 0%}
+  100%{background-position: 100%}
+}
